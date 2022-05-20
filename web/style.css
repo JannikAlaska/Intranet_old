@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19.05.2022, 08:56:27
+    Author     : Berthold
+*/
+
+body{
+        font-family: arial;
+}
+
+.Bimage{
+    background-image: url(/Intranet/resources/images/background.jpg);
+}
+
+h1{
+    font-size: 26px;
+    color: white;
+}
+
+.weblink{
+    text-align: right;
+}
+
+td.links{
+    width: 600px;
+    padding-left: 25px;
+}
+
+td.rechts {
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    width: 70%;
+    padding-right: 25px;
+}
+
+link {
+    width: 50px;
+}
+
+linktext {
+    font-family: arial;
+}
