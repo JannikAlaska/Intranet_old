@@ -14,6 +14,7 @@ body{
 
 .Bimage{
     background-image: url(/Intranet/resources/images/background.jpg);
+    background-size: cover;
 }
 
 h1{
