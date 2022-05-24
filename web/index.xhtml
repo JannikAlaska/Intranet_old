@@ -8,17 +8,72 @@
         <title>Intranet</title>
     </h:head>
     <h:body styleClass="Bimage">
-        <h:panelGrid columns="2" columnClasses="links, rechts">
+        <h:panelGrid columns="3" columnClasses="links, mitte, rechts">
             
             <h1><img src="resources/images/wappen.png" width="40px"></img> Intranet</h1> 
 
-            
-            <h:outputLink class="link" value="https://www.stadt-ilsenburg.de/">
-                <i class="fas fa-globe"></i> Website
+            <h:outputText value=" " />
+            <h:outputLink class="link" value="http://support/ticket/" target="_blank">
+                <i class="fas fa-headset"></i> Support
             </h:outputLink>
                              
         </h:panelGrid>
-        <h:graphicImage alt="Wappen" styleClass="wappen" value="resources/images/wappen.png"/>
+        <h:panelGrid columns="3" columnClasses="bodylinks, bodymitte, bodyrechts">
+        <nav>
+            <ul class="menuelist">
+              <li class="item" id="link1">
+                  <b href="#">
+                      <i class="fa-solid fa-newspaper"></i>
+                      &nbsp;
+                      News
+                  </b>
+              </li>
+              <li class="item" id="link2">
+                  <b href="#">
+                      <i class="fa-solid fa-file-lines"></i>
+                      &nbsp;
+                      Gemeinsame Dokumente (Dienstanweisungen, Vorlagen, ...)
+                  </b>
+              </li>
+              <li class="item" id="link3">
+                  <b href="#">
+                      <i class="fa-solid fa-phone"></i>
+                      &nbsp;
+                      Telefonliste
+                  </b>
+              </li>
+            </ul>
+        </nav>
+        <h:outputLink value="https://www.stadt-ilsenburg.de/" target="_blank">   
+            <h:graphicImage alt="Wappen" styleClass="wappen" value="resources/images/oie_transparent2.png"/>
+        </h:outputLink>
+        <nav>
+            <ul>
+              <li class="item" id="link4">
+                  <b href="#">
+                    Digitaler Urlaubschein &amp; Digitaler Stundenzettel
+                    &nbsp;
+                    <i class="fa-solid fa-umbrella-beach"></i>
+
+                  </b>
+              </li>
+              <li class="item" id="link5">
+                  <b href="#">
+                      &nbsp;
+                      <i class="fa-solid fa-brain"></i>
+                      Wissens-Datenbank
+                  </b>
+              </li>
+              <li class="item" id="link6">
+                  <b href="#">
+                      <i class="fa-solid fa-question"></i>
+                      &nbsp;
+                      Platzhalter für weitere Menüpunkte
+                  </b>
+              </li>
+            </ul>
+        </nav>
+        </h:panelGrid>
     </h:body>
 </html>
 
