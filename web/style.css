@@ -15,6 +15,9 @@ body{
 .Bimage{
     background-image: url(/Intranet/resources/images/background.jpg);
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
 }
 
 /**************************************************
@@ -113,8 +116,8 @@ li {
     display: inline-block;
     padding: 20px 0 20px 0;
     vertical-align: middle;
-    /*width: 730px;*/
-    height: 20%px;
+    /*width: 730px;
+    height: 20%;*/
 }
 
 li.item{
