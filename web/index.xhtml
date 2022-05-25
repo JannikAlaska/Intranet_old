@@ -10,7 +10,7 @@
     <h:body styleClass="Bimage">
         <h:panelGrid columns="3" columnClasses="links, mitte, rechts">
             
-            <h1><img src="resources/images/wappen.png" width="40px"></img> Intranet</h1> 
+            <h1><img src="resources/images/wappen.png" width="40px"></img>Intranet</h1> 
 
             <h:outputText value=" " />
             <h:outputLink class="link" value="http://support/ticket/" target="_blank">
@@ -21,56 +21,57 @@
         <h:panelGrid columns="3" columnClasses="bodylinks, bodymitte, bodyrechts">
         <nav>
             <ul class="menuelist">
-              <li class="item" id="link1">
-                  <b class="blinks" href="#">
+              <li class="item">
+                  <!--<a class="blinks" href="news.xhtml">-->
+                  <h:outputLink 
                       <i class="fa-solid fa-newspaper"></i>
                       &nbsp;
                       News
-                  </b>
+                  </a>
               </li>
               <li class="item" id="link2">
-                  <b class="blinks" href="#">
+                  <a class="blinks" href="#">
                       <i class="fa-solid fa-file-lines"></i>
                       &nbsp;
                       Gemeinsame Dokumente (Dienstanweisungen, Vorlagen, ...)
-                  </b>
+                  </a>
               </li>
               <li class="item" id="link3">
-                  <b class="blinks" href="#">
+                  <a class="blinks" href="#">
                       <i class="fa-solid fa-phone"></i>
                       &nbsp;
                       Telefonliste
-                  </b>
+                  </a>
               </li>
             </ul>
         </nav>
-        <h:outputLink value="https://www.stadt-ilsenburg.de/" target="_blank">   
+        <h:outputLink styleClass="homepageLink" value="https://www.stadt-ilsenburg.de/" target="_blank">   
             <h:graphicImage alt="Wappen" styleClass="wappen" value="resources/images/oie_transparent2.png"/>
         </h:outputLink>
         <nav>
             <ul>
               <li class="item" id="link4">
-                  <b class="brechts" href="#">
+                  <a class="brechts" href="#">
                     Digitaler Urlaubschein &amp; Digitaler Stundenzettel
                     &nbsp;
                     <i class="fa-solid fa-umbrella-beach"></i>
 
-                  </b>
+                  </a>
               </li>
               <li class="item" id="link5">
-                  <b class="brechts" href="#">
+                  <a class="brechts" href="#">
                       Wissens-Datenbank
                       &nbsp;
                       <i class="fa-solid fa-brain"></i>
 
-                  </b>
+                  </a>
               </li>
               <li class="item" id="link6">
-                  <b class="brechts" href="#">
+                  <a class="brechts" href="#">
                       Platzhalter für weitere Menüpunkte
                       &nbsp;
                       <i class="fa-solid fa-question"></i>
-                  </b>
+                  </a>
               </li>
             </ul>
         </nav>
