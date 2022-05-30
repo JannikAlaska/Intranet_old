@@ -15,11 +15,16 @@ import javax.faces.bean.RequestScoped;
 @RequestScoped
 
 public class navigationController {
-   public String moveToNews() {
+   public String news() {
       return "news?faces-redirect=true";
    }
    
    public String home(){
        return "index?faces-redirect=true";
+   }
+   
+   public String newsManagement(){
+       return "newsManagement?faces-redirect=true";
+       
    }
 }

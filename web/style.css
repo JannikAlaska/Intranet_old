@@ -17,7 +17,8 @@ body{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    padding: 0 5%;
 }
 
 /**************************************************
@@ -28,6 +29,11 @@ body{
 
 h1{
     font-size: 26px;
+    color: white;
+}
+
+h2{
+    font-size: 22px;
     color: white;
 }
 
@@ -44,7 +50,7 @@ h1{
 
 td.links{
     width: 40%;
-    padding-left: 25px;
+   /* padding-left: 25px; */
     padding-right: 200px;
 }
 
@@ -65,7 +71,46 @@ td.rechts {
 *
 **************************************************/
 
+#Titel{
+    font-weight: bold;
+    font-size: 16px;
+}
 
+table.news1{
+    color: black;
+    position: relative;
+    width: 100%;
+    /*margin: 0 10%; */
+    background: #000;
+    border-radius: 5px;
+}
+
+table.news2{
+    color: black;
+    position: relative;
+    width: 100%;
+    /* margin: 0 10%; */
+    background: rgba(255,255,255, 0.6);
+    border-radius: 5px;
+}
+
+td.newslinks{
+    text-align: left;
+    width: 80%;
+    padding:  3% 5%; 
+}
+
+td.newsrechts{
+    text-align: right;
+    width: 20%;
+    padding: 2% 4%; 
+}
+
+table#metainfo{
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
 
 td.bodylinks{
     width: 43%;
@@ -103,6 +148,8 @@ td.bodyrechts {
     margin: 50% 0%;
 }
 
+
+
 /**************************************************
 *
 * Menü
@@ -138,7 +185,7 @@ a {
     /*text-transform: uppercase;*/
     position: relative;
     display: block;
-    padding: 1% 5%;
+    padding: 1% 0%;
     transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
 }
 

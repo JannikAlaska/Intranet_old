@@ -23,22 +23,19 @@
                 </h:outputLink>
             </h:panelGrid>
         
-        <h2>News</h2><br/><br/>
+        <h2>Neuer News-Beitrag</h2><br/><br/>
         
         <h:form>
-            <h:commandButton value="Neu" action="#{navigationController.newsManagement()}" id="neueNews"/><br/><br/>
-        </h:form>    
-        <h:panelGrid columns ="2" styleClass="news1, news2" columnClasses="newslinks, newsrechts">
-            <h:panelGrid columns="1">
-                <h:outputText value="#{news.ueberschrift}" id="Titel"/>
-                <h:outputText value="#{news.message}"/>
+            <h:panelGrid columns="2">
+                <h:commandButton value="Zurück" action="#{artikelController.zurueck()}"/>
+                <h:commandButton value="Vor" action="#{artikelController.vor()}"/>
+                <h:outputLabel value="Titel" for="ueberschrift"/>
+                <h:inputText id="ueberschrift" value="#{artikelController.artikel.ueberschrift}"/>
+                <h:outputLabel value="Autor" for="author"/>
+                <h:inputText id="author" value="#{artikelController.artikel.author}"/>
+                <h:outputLabel value="Nachricht" for="message"/>
+                <h:inputText id="message" value="#{artikelController.artikel.message}"/>
             </h:panelGrid>
-            <h:panelGrid columns="1" id="metainfo">
-                <h:outputText value="#{news.author}" />
-                <h:outputText value="#{news.createDate}"/>
-            </h:panelGrid>
-        </h:panelGrid>
-
+        </h:form>
     </h:body>
 </html>
-
