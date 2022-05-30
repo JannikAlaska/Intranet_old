@@ -10,9 +10,11 @@
     </h:head>
     <h:body styleClass="Bimage">
         <h:panelGrid columns="3" columnClasses="links, mitte, rechts">
-            
-            <h1><img src="resources/images/wappen.png" width="40px"></img>Intranet</h1> 
-
+            <h:form>
+                <h:commandLink action="#{navigationController.home()}">
+                    <h1><img src="resources/images/wappen.png" width="40px"></img>Intranet</h1> 
+                </h:commandLink>
+            </h:form>
             <h:outputText value=" " />
             <h:outputLink class="link" value="http://support/ticket/" target="_blank">
                 <i class="fas fa-headset"></i> Support
@@ -25,7 +27,7 @@
                     <ul class="menuelist">
                        <li class="item">
                           <h:form>
-                              <h:commandLink styleClass="blinks" action="news">
+                              <h:commandLink styleClass="blinks" action="#{navigationController.moveToNews()}">
                                 <i class="fa-solid fa-newspaper"></i>
                                 &nbsp;
                                 News 
