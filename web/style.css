@@ -212,10 +212,19 @@ b.menuerechts {
 
 
 a:hover, a:focus, a:active {
-    /* color: #C0C0C0; */
     color: #7E2833;
     opacity: 90%;
     text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    color: #7E2833;
+    opacity: 90%;
+    text-decoration: none;
+}
+
+a:not(:hover) {
+    color: white;
 }
 
 a.blinks::before {
@@ -249,6 +258,7 @@ a.brechts::before {
 a:active::before {
     background-color: #000;
 }
+
 a.blinks:hover::before, a:focus::before {
     transform-origin: right top;
     transform: scale(1, 1);
@@ -257,4 +267,34 @@ a.blinks:hover::before, a:focus::before {
 a.brechts:hover::before, a:focus::before {
     transform-origin: left top;
     transform: scale(1, 1);
+}
+
+a.brechts:not(:hover)::before{
+    color: white;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 5%;
+    width: 100%;
+    background-color: #000;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.2s,transform 0.3s ease-out; 
+}
+
+a.blinks:not(:hover)::before{
+    color: white;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 5%;
+    width: 100%;
+    background-color: #000;
+    transform-origin: left top;
+    transform: scale(0, 1);
+    transition: color 0.2s,transform 0.3s ease-out; 
 }

@@ -27,4 +27,8 @@ public class navigationController {
        return "newsManagement?faces-redirect=true";
        
    }
+   
+   public String wissensDB(){
+       return "http://support/ticket/kb/index.phphttp://support/ticket/kb/index.php";
+   }
 }
