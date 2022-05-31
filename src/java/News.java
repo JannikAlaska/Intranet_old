@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
@@ -31,7 +32,7 @@ public class News {
      * Creates a new instance of News
      */
     public News() {
-        news.add(new Artikel("","","",Calendar.getInstance())) ;  
+        news.add(new Artikel("","","",LocalDateTime.now())) ;  
     }
     
     public ArrayList<Artikel> getNews(){
