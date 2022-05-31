@@ -40,19 +40,23 @@
                               </h:commandLink>
                           </h:form>
                       </li>
-                      <li class="item" id="link2">
-                          <a class="blinks" href="#">
-                              <i class="fa-solid fa-file-lines"></i>
-                              &nbsp;
-                              Gemeinsame Dokumente (Dienstanweisungen, Vorlagen, ...)
-                          </a>
+                      <li class="item">
+                          <h:form>
+                              <h:commandLink styleClass="blinks" action="#{navigationController.commonDocuments()}">
+                                <i class="fa-solid fa-file-lines"></i>
+                                &nbsp;
+                                Gemeinsame Dokumente (Dienstanweisungen, Vorlagen, ...) 
+                              </h:commandLink>
+                          </h:form>
                       </li>
-                      <li class="item" id="link3">
-                          <a class="blinks" href="#">
-                              <i class="fa-solid fa-phone"></i>
-                              &nbsp;
-                              Telefonliste
-                          </a>
+                      <li class="item">
+                          <h:form>
+                              <h:commandLink styleClass="blinks" action="#{navigationController.phoneList()}">
+                                <i class="fa-solid fa-phone"></i>
+                                &nbsp;
+                                Telefonliste
+                              </h:commandLink>
+                          </h:form>
                       </li>
                     </ul>
                 </nav>

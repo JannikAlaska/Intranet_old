@@ -23,9 +23,15 @@ public class navigationController {
        return "index?faces-redirect=true";
    }
    
+   public String commonDocuments(){
+       return "commonDocuments?faces-redirect=true";
+   }
+   public String phoneList(){
+       return "phoneList?faces-redirect=true";
+   }
+   
    public String newsManagement(){
-       return "newsManagement?faces-redirect=true";
-       
+       return "newsManagement?faces-redirect=true";       
    }
    
    public String wissensDB(){

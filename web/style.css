@@ -76,6 +76,7 @@ td.rechts {
     font-size: 16px;
 }
 
+
 table.news1{
     color: black;
     position: relative;
@@ -106,6 +107,41 @@ td.newsrechts{
     padding: 2% 4%; 
 }
 
+table#phoneList{
+    width: 100%;
+    border-radius: 5px;
+}
+
+tr.phone1{
+    color: black;
+    position: relative;
+    width: 100%;
+    /*margin: 0 10%; */
+    background: rgba(255,255,255, 0.6);
+}
+
+tr.phone2{
+    color: black;
+    position: relative;
+    width: 100%;
+    /* margin: 0 10%; */
+    background: rgba(255,255,255, 0.4);
+}
+
+td.phonelinks{
+    text-align: left;
+    width: 50%;
+    padding:  1% 2%;
+    color: white;
+    font-weight: bold;
+}
+
+td.phonerechts{
+    text-align: right;
+    width: 50%;
+    padding: 1% 2%; 
+}
+
 table#metainfo{
     position: relative;
     width: 100%;
@@ -126,6 +162,12 @@ td.bodymitte {
 td.bodyrechts {
     width: 43%;
     text-align: right;
+}
+
+a.phoneLink{
+    position: relative;
+    height: 100%;
+    font-size: 16px;
 }
 
 .wappen {
