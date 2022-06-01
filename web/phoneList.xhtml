@@ -25,7 +25,7 @@
         
         <h2>Telefonliste</h2><br/><br/>
         <h1><a style="color: red" href="https://www.journaldev.com/7068/jsf-database-example-mysql-jdbc">siehe Hier für DB-Einbindung</a></h1>
-            <h:dataTable var="eintrag" value="#{phone.numbers}" id="phoneList" rowClasses="phone1, phone2" columnClasses="phonelinks, phonerechts">
+            <h:dataTable var="eintrag" value="#{PhoneNr.numbers}" id="phoneList" rowClasses="phone1, phone2" columnClasses="phonelinks, phonerechts">
                 <h:column><h:outputText value="#{eintrag.mitarbeiter}"/></h:column>
                 <h:column>
                     <h:outputLink value="tel:#{eintrag.number}" styleClass="phoneLink">

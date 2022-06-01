@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
@@ -14,7 +13,7 @@ import javax.faces.bean.ViewScoped;
  */
 @ManagedBean
 @ViewScoped
-public class ArtikelController implements Serializable {
+public class ArtikelController{
     
     private int index = 0;
     
