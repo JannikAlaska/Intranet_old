@@ -5,7 +5,6 @@
  */
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -19,24 +18,19 @@ import javax.persistence.Query;
 
 public class PhoneNr {
     
-    private List<Numbers> numbers = new ArrayList<>();
+    public List<Numbers> numbers = new ArrayList<>();
     private static PhoneNr instance = new PhoneNr();
-    private final static EntityManagerFactory EMF = Persistence.createEntityManagerFactory("Intranet");
+    private final static EntityManagerFactory emf = Persistence.createEntityManagerFactory("intranet");
     
     /**
      * Creates a new instance of phone
      */
     public PhoneNr() {
         
-        /*
-        numbers.add(new Numbers("Jannik Berthold","039452/4711"));
-        numbers.add(new Numbers("Maxi Mustermann","039452/4712"));
-        numbers.add(new Numbers("Maxi Musterfrau","039452/4713"));
-        */
     }
     
-    public List<Numbers> getNumbers(){
-        EntityManager em = EMF.createEntityManager();
+    public List<Numbers> getNumbersLst(){
+        EntityManager em = emf.createEntityManager();
         
         Query q;
         q = em.createQuery("select a from Numbers a");

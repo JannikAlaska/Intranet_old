@@ -19,12 +19,13 @@ import javax.persistence.Id;
  */
 @ManagedBean
 @RequestScoped
+
 @Entity
 public class Numbers implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public int id;
+    private int id;
     private String mitarbeiter;
     private String number;
     private String fax;
